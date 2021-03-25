@@ -1,38 +1,38 @@
 server:
-  port: 3000
+  port: 5000
   basePath: ''
 application:
-  domain: juice-sh.op
-  name: 'OWASP Juice Shop'
-  logo: JuiceShop_Logo.png
+  domain: Rooman.net
+  name: 'Rooman CTF'
+  logo: rooman-w-logo.png
   favicon: favicon_js.ico
-  theme: bluegrey-lightgreen # Options: bluegrey-lightgreen blue-lightblue deeppurple-amber indigo-pink pink-bluegrey purple-green deeporange-indigo
+  theme: pink-bluegrey # Options: bluegrey-lightgreen blue-lightblue deeppurple-amber  pink-bluegrey purple-green deeporange-indigo
   showVersionNumber: true
-  showGitHubLinks: true
+  showGitHubLinks: false
   localBackupEnabled: true
   numberOfRandomFakeUsers: 0
   altcoinName: Juicycoin
-  privacyContactEmail: donotreply@owasp-juice.shop
+  privacyContactEmail: donotreply@rooman.net
   customMetricsPrefix: juiceshop
   chatBot:
-    name: 'Juicy'
+    name: 'Rooman'
     greeting: "Nice to meet you <customer-name>, I'm <bot-name>"
     trainingData: 'botDefaultTrainingData.json'
     defaultResponse: "Sorry I couldn't understand what you were trying to say"
-    avatar: 'JuicyChatBot.png'
+    avatar: 'rooman-w-logo.png'
   social:
-    twitterUrl: 'https://twitter.com/owasp_juiceshop'
-    facebookUrl: 'https://www.facebook.com/owasp.juiceshop'
-    slackUrl: 'http://owaspslack.com'
-    redditUrl: 'https://www.reddit.com/r/owasp_juiceshop'
-    pressKitUrl: 'https://github.com/OWASP/owasp-swag/tree/master/projects/juice-shop'
+    twitterUrl: 'https://twitter.com/rooman_techno?lang=en'
+    facebookUrl: 'https://www.facebook.com/RoomanTechnology/'
+    slackUrl: 'https://theroomantechnologies.slack.com'
+    redditUrl: 'https://www.rooman.net'
+    pressKitUrl: 'hhttps://github.com/Rooman-Technology/Rooman_ctf.git'
     questionnaireUrl: ~
   recyclePage:
     topProductImage: fruit_press.jpg
     bottomProductImage: apple_pressings.jpg
   welcomeBanner:
     showOnFirstStart: true
-    title: 'Welcome to OWASP Juice Shop!'
+    title: 'Welcome to Rooman CTF'
     message: "<p>Being a web application with a vast number of intended security vulnerabilities, the <strong>OWASP Juice Shop</strong> is supposed to be the opposite of a best practice or template application for web developers: It is an awareness, training, demonstration and exercise tool for security risks in modern web applications. The <strong>OWASP Juice Shop</strong> is an open-source project hosted by the non-profit <a href='https://owasp.org' target='_blank'>Open Web Application Security Project (OWASP)</a> and is developed and maintained by volunteers. Check out the link below for more information and documentation on the project.</p><h1><a href='https://owasp-juice.shop' target='_blank'>https://owasp-juice.shop</a></h1>"
   cookieConsent:
     backgroundColor: '#546e7a'
@@ -44,7 +44,7 @@ application:
     linkText: 'But me wait!'
     linkUrl: 'https://www.youtube.com/watch?v=9PnbKL3wuH4'
   securityTxt:
-    contact: 'mailto:donotreply@owasp-juice.shop'
+    contact: 'donotreply@rooman.net'
     encryption: 'https://keybase.io/bkimminich/pgp_keys.asc?fingerprint=19c01cb7157e4645e9e2c863062a85a8cbfbdcda'
     acknowledgements: '/#/score-board'
   promotion:
@@ -56,7 +56,7 @@ application:
   googleOauth:
     clientId: '1005568560502-6hm16lef8oh46hr2d98vf2ohlnj4nfhq.apps.googleusercontent.com'
     authorizedRedirects:
-      - { uri: 'https://demo.owasp-juice.shop' }
+      - { uri: 'https://rooman.net' }
       - { uri: 'http://demo.owasp-juice.shop' }
       - { uri: 'https://juice-shop.herokuapp.com' }
       - { uri: 'http://juice-shop.herokuapp.com' }
@@ -72,301 +72,296 @@ application:
       - { uri: 'http://192.168.99.100:3000', proxy: 'http://localmac.owasp-juice.shop' }
       - { uri: 'http://penguin.termina.linux.test:3000', proxy: 'http://localchromeos.owasp-juice.shop' }
 challenges:
-  showSolvedNotifications: true
-  showHints: true
-  showMitigations: true
+  showSolvedNotifications: false
+  showHints: false
+  showMitigations: false
   restrictToTutorialsFirst: false
   overwriteUrlForProductTamperingChallenge: 'https://owasp.slack.com'
   xssBonusPayload: '<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/771984076&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>'
   safetyOverride: false
 hackingInstructor:
   isEnabled: true
-  avatarImage: JuicyBot_MedicalMask.png
+  avatarImage: hacker.png
 products:
   -
-    name: 'Apple Juice (1000ml)'
-    price: 1.99
-    deluxePrice: 0.99
+    name: 'Ethical hacking from Scratch'
+    price: 5000
+    deluxePrice: 4000
     limitPerUser: 5
     description: 'The all-time classic.'
-    image: apple_juice.jpg
+    image: forensic.png
     reviews:
-      - { text: 'One of my favorites!', author: admin }
+      - { text: 'One of my famous!', author: admin }
   -
-    name: 'Orange Juice (1000ml)'
+    name: 'CCNA enterprise'
     description: 'Made from oranges hand-picked by Uncle Dittmeyer.'
-    price: 2.99
+    price: 3000
     deluxePrice: 2.49
-    image: orange_juice.jpg
+    image: ccna.png
     reviews:
-      - { text: 'y0ur f1r3wall needs m0r3 musc13', author: uvogin }
+      - { text: 'Need to learn the Basics', author: uvogin }
   -
-    name: 'Eggfruit Juice (500ml)'
-    description: 'Now with even more exotic flavour.'
-    price: 8.99
-    image: eggfruit_juice.jpg
+    name: 'Learn CCNA'
+    description: 'Get Certified from top institutions'
+    price: 8000
+    image: cybersecurity.png
     reviews:
-      - { text: 'I bought it, would buy again. 5/7', author: admin }
+      - { text: 'I am Thankfull to the Rooman Technologies ', author: admin }
   -
-    name: 'Raspberry Juice (1000ml)'
-    description: 'Made from blended Raspberry Pi, water and sugar.'
-    price: 4.99
-    image: raspberry_juice.jpg
+    name: 'Raspberry Pi'
+    description: 'Learn from scratch'
+    price: 5000
+    image: ccnp.png
   -
-    name: 'Lemon Juice (500ml)'
+    name: 'Java Course'
     description: 'Sour but full of vitamins.'
     price: 2.99
     deluxePrice: 1.99
     limitPerUser: 5
-    image: lemon_juice.jpg
+    image: fullystack.png
   -
-    name: 'Banana Juice (1000ml)'
+    name: 'Python Course'
     description: 'Monkeys love it the most.'
     price: 1.99
-    image: banana_juice.jpg
+    image: fullystack.png
     reviews:
       - { text: 'Fry liked it too.', author: bender }
   -
-    name: 'OWASP Juice Shop T-Shirt'
+    name: 'Rooman  Hacking classs'
     description: 'Real fans wear it 24/7!'
     price: 22.49
     limitPerUser: 5
-    image: fan_shirt.jpg
+    image: fullystack.png
   -
-    name: 'OWASP Juice Shop CTF Girlie-Shirt'
+    name: 'Rooman  Hacking classs'
     description: 'For serious Capture-the-Flag heroines only!'
     price: 22.49
-    image: fan_girlie.jpg
+    image: fullystack.png
   -
-    name: 'OWASP SSL Advanced Forensic Tool (O-Saft)'
+    name: 'Rooman  Hacking classs'
     description: 'O-Saft is an easy to use tool to show information about SSL certificate and tests the SSL connection according given list of ciphers and various SSL configurations.'
     price: 0.01
-    image: orange_juice.jpg
+    image: fullystack.png
     urlForProductTamperingChallenge: 'https://www.owasp.org/index.php/O-Saft'
   -
-    name: 'Christmas Super-Surprise-Box (2014 Edition)'
+    name: 'Rooman  Hacking classs'
     description: 'Contains a random selection of 10 bottles (each 500ml) of our tastiest juices and an extra fan shirt for an unbeatable price!'
     price: 29.99
-    image: undefined.jpg
+    image: fullystack.png
     useForChristmasSpecialChallenge: true
   -
-    name: 'Rippertuer Special Juice'
+    name: 'Rooman  Hacking classs'
     description: 'Contains a magical collection of the rarest fruits gathered from all around the world, like Cherymoya Annona cherimola, Jabuticaba Myrciaria cauliflora, Bael Aegle marmelos... and others, at an unbelievable price! <br/><span style="color:red;">This item has been made unavailable because of lack of safety standards.</span>'
     price: 16.99
-    image: undefined.jpg
+    image: fullystack.png
     keywordsForPastebinDataLeakChallenge:
       - hueteroneel
       - eurogium edule
   -
-    name: 'OWASP Juice Shop Sticker (2015/2016 design)'
+    name: 'Rooman  Hacking classs'
     description: 'Die-cut sticker with the official 2015/2016 logo. By now this is a rare collectors item. <em>Out of stock!</em>'
     price: 999.99
-    image: sticker.png
+    image: fullystack.png
     deletedDate: '2017-04-28'
   -
-    name: 'OWASP Juice Shop Iron-Ons (16pcs)'
+    name: 'Rooman  Hacking classs'
     description: 'Upgrade your clothes with washer safe <a href="https://www.stickeryou.com/products/owasp-juice-shop/794" target="_blank">iron-ons</a> of the OWASP Juice Shop or CTF Extension logo!'
     price: 14.99
-    image: iron-on.jpg
+    image: fullystack.png
   -
-    name: 'OWASP Juice Shop Magnets (16pcs)'
+    name: 'Rooman  Hacking classs'
     description: 'Your fridge will be even cooler with these OWASP Juice Shop or CTF Extension logo <a href="https://www.stickeryou.com/products/owasp-juice-shop/794" target="_blank">magnets</a>!'
     price: 15.99
-    image: magnets.jpg
+    image: cybersecurity.png
   -
-    name: 'OWASP Juice Shop Sticker Page'
+    name: 'Rooman  Hacking classs'
     description: 'Massive decoration opportunities with these OWASP Juice Shop or CTF Extension <a href="https://www.stickeryou.com/products/owasp-juice-shop/794" target="_blank">sticker pages</a>! Each page has 16 stickers on it.'
     price: 9.99
-    image: sticker_page.jpg
+    image: cybersecurity.png
   -
-    name: 'OWASP Juice Shop Sticker Single'
+    name: 'Rooman  Hacking classs'
     description: 'Super high-quality vinyl <a href="https://www.stickeryou.com/products/owasp-juice-shop/794" target="_blank">sticker single</a> with the OWASP Juice Shop or CTF Extension logo! The ultimate laptop decal!'
     price: 4.99
-    image: sticker_single.jpg
+    image: cybersecurity.png
   -
-    name: 'OWASP Juice Shop Temporary Tattoos (16pcs)'
+    name: 'Rooman  Hacking classs'
     description: 'Get one of these <a href="https://www.stickeryou.com/products/owasp-juice-shop/794" target="_blank">temporary tattoos</a> to proudly wear the OWASP Juice Shop or CTF Extension logo on your skin! If you tweet a photo of yourself with the tattoo, you get a couple of our stickers for free! Please mention <a href="https://twitter.com/owasp_juiceshop" target="_blank"><code>@owasp_juiceshop</code></a> in your tweet!'
     price: 14.99
-    image: tattoo.jpg
+    image: cybersecurity.png
     reviews:
       - { text: 'I straight-up gots nuff props fo''these tattoos!', author: rapper }
   -
-    name: 'OWASP Juice Shop Mug'
+    name: 'Rooman  Hacking classs'
     description: 'Black mug with regular logo on one side and CTF logo on the other! Your colleagues will envy you!'
     price: 21.99
-    image: fan_mug.jpg
+    image: cybersecurity.png
   -
-    name: 'OWASP Juice Shop Hoodie'
-    description: 'Mr. Robot-style apparel. But in black. And with logo.'
-    price: 49.99
-    image: fan_hoodie.jpg
-  -
-    name: 'OWASP Juice Shop-CTF Velcro Patch'
+    name: 'Rooman  Hacking classs'
     description: '4x3.5" embroidered patch with velcro backside. The ultimate decal for every tactical bag or backpack!'
     price: 2.92
     quantity: 5
     limitPerUser: 5
-    image: velcro-patch.jpg
+    image: fullystack.png
     reviews:
       - { text: 'This thang would look phat on Bobby''s jacked fur coat!', author: rapper }
       - { text: 'Looks so much better on my uniform than the boring Starfleet symbol.', author: jim }
   -
-    name: 'Woodruff Syrup "Forest Master X-Treme"'
+    name: 'Rooman  Hacking classs'
     description: 'Harvested and manufactured in the Black Forest, Germany. Can cause hyperactive behavior in children. Can cause permanent green tongue when consumed undiluted.'
     price: 6.99
-    image: woodruff_syrup.jpg
+    image: cybersecurity.png
   -
-    name: 'Green Smoothie'
+    name: 'Rooman  Hacking classs'
     description: 'Looks poisonous but is actually very good for your health! Made from green cabbage, spinach, kiwi and grass.'
     price: 1.99
-    image: green_smoothie.jpg
+    image: cybersecurity.png
     reviews:
       - { text: 'Fresh out of a replicator.', author: jim }
   -
-    name: 'Quince Juice (1000ml)'
+    name: 'Rooman  Hacking classs'
     description: 'Juice of the <em>Cydonia oblonga</em> fruit. Not exactly sweet but rich in Vitamin C.'
     price: 4.99
-    image: quince.jpg
+    image: cybersecurity.png
   -
-    name: 'Apple Pomace'
+    name: 'Rooman  Hacking classs'
     description: 'Finest pressings of apples. Allergy disclaimer: Might contain traces of worms. Can be <a href="/#recycle">sent back to us</a> for recycling.'
     price: 0.89
     limitPerUser: 5
-    image: apple_pressings.jpg
+    image: cybersecurity.png
   -
-    name: 'Fruit Press'
+    name: 'Rooman  Hacking classs'
     description: 'Fruits go in. Juice comes out. Pomace you can send back to us for recycling purposes.'
     price: 89.99
-    image: fruit_press.jpg
+    image: cybersecurity.png
   -
-    name: 'OWASP Juice Shop Logo (3D-printed)'
+    name: 'Rooman  Hacking classs'
     description: 'This rare item was designed and handcrafted in Sweden. This is why it is so incredibly expensive despite its complete lack of purpose.'
     price: 99.99
-    image: 3d_keychain.jpg # Exif metadata contains "OpenSCAD" as subtle hint...
+    image: fullystack.png # Exif metadata contains "OpenSCAD" as subtle hint...
     fileForRetrieveBlueprintChallenge: JuiceShop.stl # ...to blueprint file type
   -
-    name: 'Juice Shop Artwork'
+    name: 'Rooman  Hacking classs'
     description: 'Unique masterpiece painted with different kinds of juice on 90g/m² lined paper.'
     price: 278.74
     quantity: 0
-    image: artwork.jpg
+    image: cybersecurity.png
     deletedDate: '2020-12-24'
   -
-    name: 'Global OWASP WASPY Award 2017 Nomination'
+    name: 'Rooman  Hacking classs'
     description: 'Your chance to nominate up to three quiet pillars of the OWASP community ends 2017-06-30! <a href="https://www.owasp.org/index.php/WASPY_Awards_2017">Nominate now!</a>'
     price: 0.03
-    image: waspy.png
+    image: cybersecurity.png
     deletedDate: '2017-07-01'
   -
-    name: 'Strawberry Juice (500ml)'
+    name: 'Rooman  Hacking classs'
     description: 'Sweet & tasty!'
     price: 3.99
-    image: strawberry_juice.jpeg
+    image: cybersecurity.png
   -
-    name: 'Carrot Juice (1000ml)'
+    name: 'Rooman  Hacking classs'
     description: 'As the old German saying goes: "Carrots are good for the eyes. Or has anyone ever seen a rabbit with glasses?"'
     price: 2.99
-    image: carrot_juice.jpeg
+    image: cybersecurity.png
     reviews:
       - { text: '0 st4rs f0r 7h3 h0rr1bl3 s3cur17y', author: uvogin }
   -
-    name: 'OWASP Juice Shop Sweden Tour 2017 Sticker Sheet (Special Edition)'
+    name: 'Rooman  Hacking classs'
     description: '10 sheets of Sweden-themed stickers with 15 stickers on each.'
     price: 19.1
-    image: stickersheet_se.png
+    image: cybersecurity.png
     deletedDate: '2017-09-20'
   -
-    name: 'Pwning OWASP Juice Shop'
+    name: 'Rooman  Hacking classs'
     description: '<em>The official Companion Guide</em> by Björn Kimminich available <a href="https://leanpub.com/juice-shop">for free on LeanPub</a> and also <a href="https://pwning.owasp-juice.shop">readable online</a>!'
     price: 5.99
-    image: cover_small.jpg
+    image: cybersecurity.png
     reviews:
       - { text: 'Even more interesting than watching Interdimensional Cable!', author: morty }
   -
-    name: 'Melon Bike (Comeback-Product 2018 Edition)'
+    name: 'Rooman  Hacking classs'
     description: 'The wheels of this bicycle are made from real water melons. You might not want to ride it up/down the curb too hard.'
     price: 2999
     quantity: 3
     limitPerUser: 1
-    image: melon_bike.jpeg
+    image: cybersecurity.png
   -
-    name: 'OWASP Juice Shop Coaster (10pcs)'
+    name: 'Rooman  Hacking classs'
     description: 'Our 95mm circle coasters are printed in full color and made from thick, premium coaster board.'
     price: 19.99
     quantity: 0
-    image: coaster.jpg
+    image: cybersecurity.png
   -
-    name: 'OWASP Snakes and Ladders - Web Applications'
+    name: 'Rooman  Hacking classs'
     description: 'This amazing web application security awareness board game is <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1969196030">available for Tabletop Simulator on Steam Workshop</a> now!'
     price: 0.01
     quantity: 8
-    image: snakes_ladders.jpg
+    image: cybersecurity.png
     reviews:
       - { text: 'Wait for a 10$ Steam sale of Tabletop Simulator!', author: bjoernOwasp }
   -
-    name: 'OWASP Snakes and Ladders - Mobile Apps'
+    name: 'Rooman  Hacking classs'
     description: 'This amazing mobile app security awareness board game is <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1970691216">available for Tabletop Simulator on Steam Workshop</a> now!'
     price: 0.01
     quantity: 0
-    image: snakes_ladders_m.jpg
+    image: windowsserver.png
     reviews:
       - { text: "Here yo' learn how tha fuck ta not show yo' goddamn phone on camera!", author: rapper }
   -
-    name: 'OWASP Juice Shop Holographic Sticker'
+    name: 'Rooman  Hacking classs'
     description: "Die-cut holographic sticker. Stand out from those 08/15-sticker-covered laptops with this shiny beacon of 80's coolness!"
     price: 2.00
     quantity: 0
-    image: holo_sticker.png
+    image: windowsserver.png
     reviews:
       - { text: "Rad, dude!", author: rapper }
       - { text: "Looks spacy on Bones' new tricorder!", author: jim }
       - { text: "Will put one on the Planet Express ship's bumper!", author: bender }
   -
-    name: 'OWASP Juice Shop "King of the Hill" Facemask'
+    name: 'Rooman  Hacking classs'
     description: "Facemask with compartment for filter from 50% cotton and 50% polyester."
     price: 13.49
     quantity: 0
     limitPerUser: 1
-    image: fan_facemask.jpg
+    image: windowsserver.png
     reviews:
       - { text: "K33p5 y0ur ju1cy 5plu773r 70 y0ur53lf!", author: uvogin }
       - { text: "Puny mask for puny human weaklings!", author: bender }
   -
-    name: 'Juice Shop Adversary Trading Card (Common)'
+    name: 'Rooman  Hacking classs'
     description: 'Common rarity "Juice Shop" card for the <a href="https://docs.google.com/forms/d/e/1FAIpQLSecLEakawSQ56lBe2JOSbFwFYrKDCIN7Yd3iHFdQc5z8ApwdQ/viewform">Adversary Trading Cards</a> CCG.'
     price: 2.99
     deluxePrice: 0.99
     deletedDate: '2020-11-30'
     limitPerUser: 5
-    image: ccg_common.png
+    image: windowsserver.png
     reviews:
       - { text: "Ooooh, puny human playing Mau Mau, now?", author: bender }
   -
-    name: 'Juice Shop Adversary Trading Card (Super Rare)'
+    name: 'Rooman  Hacking classs'
     description: 'Super rare "Juice Shop" card with holographic foil-coating for the <a href="https://docs.google.com/forms/d/e/1FAIpQLSecLEakawSQ56lBe2JOSbFwFYrKDCIN7Yd3iHFdQc5z8ApwdQ/viewform">Adversary Trading Cards</a> CCG.'
     price: 99.99
     deluxePrice: 69.99
     deletedDate: '2020-11-30'
     quantity: 2
     limitPerUser: 1
-    image: ccg_foil.png
+    image: windowsserver.png
     reviews:
       - { text: "Mau Mau with bling-bling? Humans are so pathetic!", author: bender }
   -
-    name: 'Juice Shop "Permafrost" 2020 Edition'
+    name: 'Rooman  Hacking classs'
     description: 'Exact version of <a href="https://github.com/bkimminich/juice-shop/releases/tag/v9.3.1-PERMAFROST">OWASP Juice Shop that was archived on 02/02/2020</a> by the GitHub Archive Program and ultimately went into the <a href="https://github.blog/2020-07-16-github-archive-program-the-journey-of-the-worlds-open-source-code-to-the-arctic">Arctic Code Vault</a> on July 8. 2020 where it will be safely stored for at least 1000 years.'
     price: 9999.99
     quantity: 1
     limitPerUser: 1
-    image: permafrost.jpg
+    image: windowsserver.png
     reviews:
       - { text: "🧊 Let it go, let it go 🎶 Can't hold it back anymore 🎶 Let it go, let it go 🎶 Turn away and slam the door ❄️", author: rapper }
   -
-    name: 'Best Juice Shop Salesman Artwork'
+    name: 'Rooman  Hacking classs'
     description: 'Unique digital painting depicting Stan, our most qualified and almost profitable salesman. He made a succesful carreer in selling used ships, coffins, krypts, crosses, real estate, life insurance, restaurant supplies, voodoo enhanced asbestos and courtroom souvenirs before <em>finally</em> adding his expertise to the Juice Shop marketing team.'
     price: 5000
     quantity: 1
-    image: artwork2.jpg
+    image: windowsserver.png
     reviews:
       - { text: "I'd stand on my head to make you a deal for this piece of art.", author: stan }
       - { text: "Just when my opinion of humans couldn't get any lower, along comes Stan...", author: bender }
